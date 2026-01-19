@@ -34,12 +34,15 @@ https://cabbyuniverse.github.io/nba-trivia-game/nbaquestions.json
 
 ---
 
-## Step 3: Handle the Response
-1. From **Web1**, drag **"when Web1.GotText"**
-2. From **Variables**, drag **"set global questions to"**
-3. From **Web1**, drag **"call Web1.JsonTextDecode"**
-4. **The "responseContent" input appears automatically** on the JsonTextDecode block
-5. **Leave it as is** - it automatically gets the web response
+## Step 3: Create Global Variable and Handle Response
+1. From **Variables**, drag **"initialize global name to"**
+2. Change "name" to **"questions"**
+3. Leave the "to" part empty for now (this creates the global variable)
+4. From **Web1**, drag **"when Web1.GotText"**
+5. From **Variables**, drag **"set global questions to"** (now available after step 1-3)
+6. From **Web1**, drag **"call Web1.JsonTextDecode"**
+7. **The "responseContent" input appears automatically** on the JsonTextDecode block
+8. **Leave it as is** - it automatically gets the web response
 
 ---
 
@@ -52,6 +55,11 @@ when Screen1.Initialize
      call Web1.Get
 ```
 
+### Create Global Variable:
+```
+initialize global questions to (empty)
+```
+
 ### Response Handler:
 ```
 when Web1.GotText
@@ -62,6 +70,8 @@ when Web1.GotText
 ---
 
 ## Key Points:
+- **First create the global variable** using "initialize global name to" and change to "questions"
+- **Then you can use "set global questions to"** in the Web1.GotText event
 - **Don't look for a separate responseContent block**
 - It's **built into** the JsonTextDecode block
 - Just drag JsonTextDecode and the responseContent input is already there
