@@ -1,0 +1,14 @@
+{
+  "questions": [
+    {"q": "Who won the 2023 NBA MVP award?", "a": "Joel Embiid"},
+    {"q": "Which team has won the most NBA championships?", "a": "Lakers"},
+    {"q": "Who scored 100 points in a single NBA game?", "a": "Wilt Chamberlain"},
+    {"q": "What team did Michael Jordan play for most of his career?", "a": "Chicago Bulls"},
+    {"q": "Who is known as 'The King'?", "a": "LeBron James"},
+    {"q": "Which team won the 2023 NBA Championship?", "a": "Denver Nuggets"},
+    {"q": "Who holds the record for most career points in NBA history?", "a": "LeBron James"},
+    {"q": "What does NBA stand for?", "a": "National Basketball Association"},
+    {"q": "How many players are on the court for each team during play?", "a": "5"},
+    {"q": "Which player is known as 'The Greek Freak'?", "a": "Giannis Antetokounmpo"}
+  ]
+}
